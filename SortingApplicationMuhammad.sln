@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingApplicationMuhammad", "SortingApplicationMuhammad\SortingApplicationMuhammad.csproj", "{AC23C334-21F5-47F3-8B6D-3DB202FA567C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericClass", "GenericClass\GenericClass.csproj", "{3FF11C99-7780-403A-95B3-C0F5878E57C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC23C334-21F5-47F3-8B6D-3DB202FA567C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC23C334-21F5-47F3-8B6D-3DB202FA567C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC23C334-21F5-47F3-8B6D-3DB202FA567C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC23C334-21F5-47F3-8B6D-3DB202FA567C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF11C99-7780-403A-95B3-C0F5878E57C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF11C99-7780-403A-95B3-C0F5878E57C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF11C99-7780-403A-95B3-C0F5878E57C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF11C99-7780-403A-95B3-C0F5878E57C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD27B886-A456-48B6-92E1-3B9F81C604F7}
+	EndGlobalSection
+EndGlobal

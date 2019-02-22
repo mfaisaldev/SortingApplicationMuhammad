@@ -1,0 +1,57 @@
+﻿@model SortingApplicationMuhammad.Models.SortingPageModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Sorting Application</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Input Details</h4>
+    <p>
+        Please input a range of strings or integers for sorting.<br />
+        For example, [1,2,3,1,2,3,14,5,6,7,1334,123] or [a,b,c,d,a,c,d,e,a,ab,as,ae,re,tg,h,a,b,c]<br />
+        By default it will perform Bubble sort.
+    </p>
+    <hr />
+    @if (TempData["Success"] != null)
+    {
+        <div class="green">
+            <p><strong>Ouput :</strong> @TempData["Success"].ToString()</p>
+        </div>
+    }
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.InputArray, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.InputArray, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.InputArray, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.SortingType, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("SortingTypes",
+                new SelectList(Enum.GetValues(typeof(SortingApplicationMuhammad.Models.SortingTypes))),
+                "Select Sorting",
+                new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.SortingType, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Perform Sorting" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
